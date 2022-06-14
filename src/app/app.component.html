@@ -1,0 +1,10 @@
+<div class="container" style="max-width: 750px">
+  <div class="d-flex justify-content-center justify-content-sm-between align-items-center m-5 mt-3 mb-3 mt-sm-5 mb-sm-5 flex-wrap-reverse">
+    <mat-slide-toggle class="m-sm-0 m-2 mat-h2" [color]="'primary'" [checked]="grayScaleMode" (change)="grayScaleMode = $event.checked">Make photos grayscale</mat-slide-toggle>
+    <button class="m-sm-0 m-2" mat-flat-button [color]="'primary'" (click)="fetchData()">Fetch New Photos</button>
+  </div>
+
+  <div class="row">
+    <app-auction-photo class="col-12 p-0 col-sm-6" [grayScaleMode]="grayScaleMode" [auction]="item" *ngFor="let item of fetchedData"></app-auction-photo>
+  </div>
+</div>

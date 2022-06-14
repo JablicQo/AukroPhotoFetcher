@@ -1,0 +1,33 @@
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+
+  .img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(50vh - 100px);
+    min-height: 200px;
+  }
+
+  .img-cover {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.666);
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    text-align: left;
+    line-height: 30px;
+
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+      color: lightgrey;
+      line-height: 14px;
+    }
+  }
+}
+

@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.grayscale {
+  filter: grayscale(1) !important;
+}
